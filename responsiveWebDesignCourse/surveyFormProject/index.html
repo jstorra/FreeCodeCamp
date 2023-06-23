@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">This is just a survey form test.</p>
+        </header>
+        <form id="survey-form">
+            <div class="group-form">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" class="form-control" type="text" placeholder="Enter your name" required>
+            </div>
+            <div class="group-form">
+                <label id="email-label" for="email">Email</label>
+                <input id="email" class="form-control" type="email" placeholder="Enter your Email" required>
+            </div>
+            <div class="group-form">
+                <label id="number-label" for="number">Age<span> (optional)</span></label>
+                <input id="number" class="form-control" type="number" min="13" max="120" placeholder="Age">
+            </div>
+            <div class="group-form">
+                <p>Are you a Software Engineer?</p>
+                <select name="option" id="dropdown" class="form-control">
+                    <option disabled selected value>Choose one</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                    <option value="Prefer">Prefer not to say</option>
+                </select>
+            </div>
+            <div class="group-form">
+                <p>What programming languages do you like?</p>
+                <label><input class="input-checkbox" type="checkbox" value="Python">Python</label>
+                <label><input class="input-checkbox" type="checkbox" value="Java">Java</label>
+                <label><input class="input-checkbox" type="checkbox" value="JS">JavaScript</label>
+                <label><input class="input-checkbox" type="checkbox" value="Go">Go</label>
+                <label><input class="input-checkbox" type="checkbox" value="PHP">PHP</label>
+                <label><input class="input-checkbox" type="checkbox" value="C">C</label>
+                <label><input class="input-checkbox" type="checkbox" value="C++">C++</label>
+                <label><input class="input-checkbox" type="checkbox" value="C#">C#</label>
+            </div>
+            <div class="group-form">
+                <p>What do you consider to be the best programming language in the world?</p>
+                <label><input class="input-radio" type="radio" name="bestlan" value="Python">Python</label>
+                <label><input class="input-radio" type="radio" name="bestlan" value="Java">Java</label>
+                <label><input class="input-radio" type="radio" name="bestlan" value="JS">JavaScript</label>
+                <label><input class="input-radio" type="radio" name="bestlan" value="C">C</label>
+                <label><input class="input-radio" type="radio" name="bestlan" value="C++">C++</label>
+                <label><input class="input-radio" type="radio" name="bestlan" value="C#">C#</label>
+            </div>
+            <div class="group-form">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="group-form">
+                <button type="submit" id="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
